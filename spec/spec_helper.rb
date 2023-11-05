@@ -12,4 +12,14 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.when_first_matching_example_defined(:clearable_sources) do
+    config.around(:example) do |ex|
+      DayOffs.registered_sources = []
+      DayOffs.used_sources = {}
+      ex.run
+      DayOffs.registered_sources = []
+      DayOffs.used_sources = {}
+    end
+  end
 end
