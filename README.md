@@ -20,7 +20,9 @@ module DayOffs::Sources
     with_name :super_source # define source name
     
     def call
-      puts "excellent #{year} and #{country}" # you can access to target instance variables
+      [
+        DayOffs::DayOff.new(country, Date.civil(year))
+      ] # you can access to target instance variables
     end
   end
   
@@ -29,7 +31,11 @@ module DayOffs::Sources
     with_years 2023, 2024
     with_name :another_source
     
-    def call; end
+    def call
+      [
+        DayOffs::DayOff.new(country, Date.civil(year))
+      ]
+    end
   end
 end
 ```
@@ -54,7 +60,7 @@ end
 
 ## Usage
 
-Adding a class and inheriting from `Spyke::Base` will allow you to interact with the remote service:
+Adding a class and inheriting from `DayOffs::Sources::Base` will allow you to interact with the chosen sources:
 
 ```ruby
 DayOffs::RU.(2023)
