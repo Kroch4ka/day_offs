@@ -3,7 +3,7 @@
 require_relative "../spec_helper"
 
 RSpec.describe DayOffs::Sources::DSL do
-  let(:klass) { Class.new }
+  let(:klass) { Class.new(DayOffs::Sources::Base) }
 
   before { klass.extend(described_class) }
 

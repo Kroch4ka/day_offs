@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class DayOffs::Sources::Base
+  extend DayOffs::Sources::DSL
+
   attr_reader :country, :year
 
   def initialize(year, country)
@@ -22,8 +24,12 @@ class DayOffs::Sources::Base
     def inherited(subclass)
       super
       DayOffs.registered_sources << subclass
-      subclass.instance_exec do
-        extend DayOffs::Sources::DSL
+      subclass.instance_eval do
+        @countries = []
+        @years = []
+        subclass.singleton_class.instance_eval do
+          attr_accessor :countries, :years, :source_name
+        end
       end
     end
   end

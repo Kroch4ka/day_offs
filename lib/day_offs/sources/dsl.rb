@@ -2,17 +2,6 @@
 
 module DayOffs::Sources::DSL
 
-  def self.extended(klass)
-    super
-    klass.instance_exec do
-      @countries = []
-      @years = []
-    end
-    klass.singleton_class.instance_exec do
-      attr_accessor :countries, :years, :source_name
-    end
-  end
-
   def with_countries(*countries_alpha2)
     verified_countries = countries_alpha2.map do |country|
       DayOffs::Sources::Validator.validate_country(country.upcase)
