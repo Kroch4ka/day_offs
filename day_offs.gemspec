@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Add day offs sources for different countries in a standardized manner"
   spec.homepage = "https://github.com/Kroch4ka/day_offs"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
