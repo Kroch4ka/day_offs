@@ -7,8 +7,11 @@ gemspec
 
 gem "rake", "~> 13.0"
 
-gem "rspec", "~> 3.0"
+group(:lint) do
+  gem "rubocop", "~> 1.21"
+end
 
-gem "rubocop", "~> 1.21"
-
-gem 'coveralls_reborn', require: false
+group(:test) do
+  gem "rspec", "~> 3.0"
+  gem 'coveralls_reborn', require: false
+end
