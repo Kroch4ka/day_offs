@@ -63,6 +63,6 @@ end
 Adding a class and inheriting from `DayOffs::Sources::Base` will allow you to interact with the chosen sources:
 
 ```ruby
-DayOffs::RU.(2023)
-DayOffs::BY.(2023, source: :another_source)
+DayOffs::RU.fetch(2023)
+DayOffs::BY.fetch(2023, source: :another_source)
 ```

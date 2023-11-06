@@ -36,7 +36,7 @@ RSpec.describe DayOffs::Core do
     it "create country module with call method" do
       described_class.objectize_sources
       expect(DayOffs.const_defined?(:RU)).to be_truthy
-      expect(DayOffs::RU.singleton_class.method_defined?(:call)).to be_truthy
+      expect(DayOffs::RU.singleton_class.method_defined?(:fetch)).to be_truthy
     end
   end
 
@@ -46,15 +46,15 @@ RSpec.describe DayOffs::Core do
     end
 
     it "raise error if given year is not supported" do
-      expect { DayOffs::RU.call(2024) }.to raise_error(DayOffs::Errors::UnsupportedYearError)
+      expect { DayOffs::RU.fetch(2024) }.to raise_error(DayOffs::Errors::UnsupportedYearError)
     end
 
     it "return value from default source" do
-      expect(DayOffs::RU.call(2023)).to eq(:source)
+      expect(DayOffs::RU.fetch(2023)).to eq(:source)
     end
 
     it "return value from given source" do
-      expect(DayOffs::RU.call(2023, source: :another_source)).to eq(:another_source)
+      expect(DayOffs::RU.fetch(2023, source: :another_source)).to eq(:another_source)
     end
   end
 end
