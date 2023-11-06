@@ -54,7 +54,7 @@ RSpec.describe DayOffs::Core do
     end
 
     it "return value from given source" do
-      expect(DayOffs::RU.fetch(2023, source: :another_source)).to eq(:another_source)
+      expect(DayOffs::RU.fetch(2023, :another_source)).to eq(:another_source)
     end
   end
 end

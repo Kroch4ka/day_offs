@@ -64,5 +64,5 @@ Adding a class and inheriting from `DayOffs::Sources::Base` will allow you to in
 
 ```ruby
 DayOffs::RU.fetch(2023)
-DayOffs::BY.fetch(2023, source: :another_source)
+DayOffs::BY.fetch(2023, :another_source)
 ```

@@ -13,7 +13,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.4.16, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coveralls_reborn (v0.28.0, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="docile (v1.4.0, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.3, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.23.0, RVM: ruby-3.2.0) [gem]" level="application" />
@@ -31,6 +33,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.57.2, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.30.0, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.22.0, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov-html (v0.12.3, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov_json_formatter (v0.1.4, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sync (v0.5.0, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="term-ansicolor (v1.7.1, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.0, RVM: ruby-3.2.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tins (v1.32.1, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.5.0, RVM: ruby-3.2.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.12, RVM: ruby-3.2.0) [gem]" level="application" />
   </component>
