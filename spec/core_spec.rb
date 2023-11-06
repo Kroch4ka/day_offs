@@ -49,10 +49,6 @@ RSpec.describe DayOffs::Core do
       expect { DayOffs::RU.call(2024) }.to raise_error(DayOffs::Errors::UnsupportedYearError)
     end
 
-    it "raise error if given unsupported source" do
-      expect { DayOffs::RU.call(2023, source: :unsupported_source) }.to raise_error(DayOffs::Errors::SourceNotFoundError)
-    end
-
     it "return value from default source" do
       expect(DayOffs::RU.call(2023)).to eq(:source)
     end

@@ -2,5 +2,4 @@
 
 module DayOffs::Errors
   class UnsupportedYearError < StandardError; end
-  class SourceNotFoundError < StandardError; end
 end

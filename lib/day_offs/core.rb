@@ -11,11 +11,7 @@ module DayOffs::Core
           def call(year, source: nil)
             raise DayOffs::Errors::UnsupportedYearError unless @sources[year]
 
-            if source
-              source = @sources[year].find { |s| s.source_name == source }
-              raise DayOffs::Errors::SourceNotFoundError unless source
-            end
-            source ||= @sources[year].first
+            source = @sources[year].find { |s| s.source_name == source } || @sources[year].first
             source.call(year, @country)
           end
         end

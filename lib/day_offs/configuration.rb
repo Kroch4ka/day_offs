@@ -15,6 +15,10 @@ class DayOffs::Configuration
 
     raise UndefinedSourceError unless source_klass
 
+    add_source_klass(source_klass)
+  end
+
+  def add_source_klass(source_klass)
     source_klass.countries.each do |country|
       source_klass.years.each do |year|
         DayOffs.used_sources[country] ||= {}
