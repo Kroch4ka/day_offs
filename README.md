@@ -1,5 +1,7 @@
 <div align="center">
   <h1>DayOffs</h1>
+<div><a href='https://coveralls.io/github/Kroch4ka/day_offs?branch=main'><img src='https://coveralls.io/repos/github/Kroch4ka/day_offs/badge.svg?branch=main' alt='Coverage Status' /></a>
+<a href="https://codeclimate.com/github/Kroch4ka/day_offs/maintainability"><img src="https://api.codeclimate.com/v1/badges/119af1d7fc0a499d9388/maintainability" /></a></div>
   Add day offs sources for different countries in a standardized manner
   <br /><br />
 </div>
