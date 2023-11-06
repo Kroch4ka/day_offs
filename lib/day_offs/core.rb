@@ -8,7 +8,7 @@ module DayOffs::Core
           @sources = year_sources_hash
           @country = country
 
-          def fetch(year, source: nil)
+          def fetch(year, source = nil)
             raise DayOffs::Errors::UnsupportedYearError unless @sources[year]
 
             source = @sources[year].find { |s| s.source_name == source } || @sources[year].first

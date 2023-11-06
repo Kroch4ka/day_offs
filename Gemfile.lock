@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     day_offs (0.1.0)
-      zeitwerk
+      zeitwerk (~> 2.6)
 
 GEM
   remote: https://rubygems.org/
