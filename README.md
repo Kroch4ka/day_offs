@@ -44,6 +44,7 @@ end
 
 Sources should return an array of objects ``DayOffs::DayOff`` it`s simple struct ``Struct.new(:country, :date)``
 
+A [template] was created for faster creation of sources. You can see an [example] of the created source.
 ## Configuration
 
 Add this line to your application's Gemfile:
@@ -62,9 +63,10 @@ end
 
 ## Usage
 
-Adding a class and inheriting from `DayOffs::Sources::Base` will allow you to interact with the chosen sources:
-
 ```ruby
 DayOffs::RU.fetch(2023)
 DayOffs::BY.fetch(2023, :another_source)
 ```
+
+[template]: https://github.com/Kroch4ka/day_offs-source-template
+[example]: https://github.com/Kroch4ka/day_offs-consultant
